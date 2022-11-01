@@ -1,7 +1,11 @@
+/*  Name: Zhu Lu 
+    Email: Zhu_lu@student.uml.edu
+*/
 #myForm{
     text-align: center;
     border-style: groove;
 }
+/* This just changes the weight and size also added some animation */ 
 #header, h1{
     font-size: 200%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,12 +45,14 @@ tr:nth-child(n){
     background-color: burlywood;
     text-align: center;
 }
+/* make the col sticky and change the background color*/
 td:nth-child(1){
     position: sticky;
     left: 0;
     background-color: bisque;
     text-align: center;
 }
+/* make the row sticky and change the background color*/
 tr:nth-child(1){
     position: sticky;
     top: 0;

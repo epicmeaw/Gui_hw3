@@ -1,3 +1,6 @@
+<!--  Name: Zhu Lu  -->
+<!--  Email: Zhu_lu@student.uml.edu -->
+<!-- This is my html file in which i made a form and a header and some divs-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +25,7 @@
          <h1 id="header"> MultTable</h1>
    </div>
 </div>
+   <!--The form takes in a minValue max minrow max row and when then button is click the the function calc() will occur-->
    <form id="myForm">
       <label for="minValue"> minValue</label> <br>
       <input type="text" name="minValue" id="minValue" value="0"><br> 
@@ -33,7 +37,9 @@
       <input type="text" name="minValue" id="maxRowValue" value="0"><br> 
       <button type="button" onclick="calc()">Submit</button>
    </form>
+   <!-- This is when the error message will occur when incorrect input are put in-->
    <h1 id="error"></h1>
+   <!--This is where the table is being put in-->
    <div id="result">
    </div>
 

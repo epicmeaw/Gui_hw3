@@ -1,3 +1,6 @@
+/*  Name: Zhu Lu 
+    Email: Zhu_lu@student.uml.edu
+*/
 function calc() {
     var minValue = parseInt(document.querySelector("#minValue").value);
     var maxValue = parseInt(document.querySelector("#maxValue").value);
@@ -16,8 +19,9 @@ function remove(){
     g.setAttribute("id", "result");
     body.replaceWith(g);
 }
-
+ //This function creates a table with the 4 variable are put in
 function createTable(minValue,maxValue,minRowValue,maxRowValue){
+    //This function will replace reuslt with a new div with the same id  and replace the current with it
     remove();
     var body = document.getElementById("result");
 
@@ -26,15 +30,15 @@ function createTable(minValue,maxValue,minRowValue,maxRowValue){
     var tableB = document.createElement('TBODY');
 
     table.appendChild(tableB);
-
+    //This is just alot of if else statement that checks for if the correct input are inputed
     if(!(minValue <= 50 && minValue >= -50)){
-        var text = document.getElementById("error").innerHTML = "minValue is outside of limits";
+        var text = document.getElementById("error").innerHTML = "minValue is outside of limits (-50 - 50)";
     }else if(!(maxValue <= 50 && maxValue >= -50)){
-        var text = document.getElementById("error").innerHTML = "maxValue is outside of limits";
+        var text = document.getElementById("error").innerHTML = "maxValue is outside of limits (-50 - 50)";
     }else if(!(minRowValue <= 50 && minRowValue >= -50)){
-        var text = document.getElementById("error").innerHTML = "minRowValue is outside of limits";
+        var text = document.getElementById("error").innerHTML = "minRowValue is outside of limits (-50 - 50)";
     }else if(!(maxRowValue <= 50 && maxRowValue >= -50)){
-        var text = document.getElementById("error").innerHTML = "maxRowValue is outside of limits";
+        var text = document.getElementById("error").innerHTML = "maxRowValue is outside of limits (-50 - 50)";
     }else if(!(minValue <= maxValue)){
         var text = document.getElementById("error").innerHTML = "minValue is greater the maxValue";
     }else if(!(minRowValue <= maxRowValue)){
